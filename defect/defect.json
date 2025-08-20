@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:DEF-.YYYY.-.##### ",
+ "creation": "2025-06-24 16:29:27.867442",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "test_case_id",
+  "actual_result",
+  "priority",
+  "comments",
+  "status",
+  "naming_series",
+  "column_break_uvvi",
+  "test_title",
+  "expected_result",
+  "severity",
+  "assigned_by",
+  "notes",
+  "attach",
+  "column_break_lxly",
+  "test_description",
+  "result",
+  "build_number",
+  "watchers",
+  "assigned_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Severity",
+   "options": "Critical\nMajor\nModerate\nMinor\nCosmetic"
+  },
+  {
+   "fieldname": "build_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Build Number",
+   "options": "Test Build",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "watchers",
+   "fieldtype": "Link",
+   "label": "Watchers",
+   "options": "User"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "DEF-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "column_break_uvvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_title",
+   "fieldtype": "Data",
+   "label": "Test Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_description",
+   "fieldtype": "Small Text",
+   "label": "Test Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expected_result",
+   "fieldtype": "Data",
+   "label": "Expected Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_result",
+   "fieldtype": "Data",
+   "label": "Actual Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lxly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_case_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Case ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "default": "frappe.session.user",
+   "fieldname": "assigned_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assigned By",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nNew\nOpened\nIn Progress\nReady for Retest\nClosed\nReopened"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "Result",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-15 18:16:50.866444",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Defect",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
