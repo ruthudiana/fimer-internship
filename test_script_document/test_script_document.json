@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:test_script_name",
+ "creation": "2025-06-20 11:17:21.227550",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_designed_by",
+  "department",
+  "column_break_yquw",
+  "test_creation_date",
+  "functionalities",
+  "column_break_blwg",
+  "test_script_name",
+  "section_break_h",
+  "template_name",
+  "column_break_gmui",
+  "section_break_vail",
+  "test_details",
+  "marketing_test_details",
+  "production_test_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_designed_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Designed By"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_yquw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Test Creation Date"
+  },
+  {
+   "fieldname": "column_break_blwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_script_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Script Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "test_details",
+   "fieldtype": "Table",
+   "label": "Test Details",
+   "options": "Test Details"
+  },
+  {
+   "fieldname": "functionalities",
+   "fieldtype": "Link",
+   "label": "Functionalities",
+   "options": "Test Functionalities"
+  },
+  {
+   "fieldname": "section_break_h",
+   "fieldtype": "Section Break",
+   "label": "Test Script Template"
+  },
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Template Name",
+   "options": "Test Script Template"
+  },
+  {
+   "fieldname": "column_break_gmui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vail",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_test_details",
+   "fieldtype": "Table",
+   "label": "Production Test Details",
+   "options": "Production Test Script"
+  },
+  {
+   "fieldname": "marketing_test_details",
+   "fieldtype": "Table",
+   "label": "Marketing Test Details",
+   "options": "Marketing Test Script"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-08 11:48:17.986902",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Test Script Document",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

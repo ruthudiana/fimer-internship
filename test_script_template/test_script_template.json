@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2025-06-19 15:02:58.594996",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_type",
+  "column_break_dujm",
+  "department",
+  "section_break_csjd",
+  "test_script",
+  "marketing_script",
+  "production_script",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_dujm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "template_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Template Type",
+   "options": "\nTest Script\nMarketing\nProduction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_csjd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.template_type == \"Test Script\"",
+   "fieldname": "test_script",
+   "fieldtype": "Table",
+   "label": "Test Script",
+   "options": "Test Script"
+  },
+  {
+   "depends_on": "eval:doc.template_type == \"Marketing\"",
+   "fieldname": "marketing_script",
+   "fieldtype": "Table",
+   "label": "Marketing Script",
+   "options": "Marketing Test Script"
+  },
+  {
+   "depends_on": "eval:doc.template_type == \"Production\"",
+   "fieldname": "production_script",
+   "fieldtype": "Table",
+   "label": "Production Script",
+   "options": "Production Test Script"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "TST.-.#####"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-08 11:43:13.427530",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Test Script Template",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
