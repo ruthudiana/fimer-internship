@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:requirement_id",
+ "creation": "2025-07-10 15:06:19.484143",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "requirement_id",
+  "marketing_script",
+  "template_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "requirement_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Requirement ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "marketing_script",
+   "fieldtype": "Table",
+   "label": "Marketing Script",
+   "options": "Marketing Test Script"
+  },
+  {
+   "fieldname": "template_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Template Type",
+   "options": "\nTest Script\nMarketing\nProduction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-11 15:02:54.452794",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Marketing Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

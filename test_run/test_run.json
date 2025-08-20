@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TEST RUN-.YYYY.-.MM.-.####",
+ "creation": "2025-06-27 14:33:30.600715",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "test_executed_by",
+  "script_reference",
+  "column_break_dwrj",
+  "build_number",
+  "test_date",
+  "section_break_urzp",
+  "test_outcomes",
+  "marketing_test_outcomes",
+  "production_test_outcomes"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_executed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Test Executed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "script_reference",
+   "fieldtype": "Link",
+   "label": "Script Reference",
+   "options": "Test Script Document"
+  },
+  {
+   "default": "1",
+   "fieldname": "build_number",
+   "fieldtype": "Link",
+   "label": "Build Number",
+   "options": "Test Build"
+  },
+  {
+   "fieldname": "column_break_dwrj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_urzp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Datetime",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "test_outcomes",
+   "fieldtype": "Table",
+   "label": "Test Outcomes",
+   "options": "Test Outcomes"
+  },
+  {
+   "fieldname": "marketing_test_outcomes",
+   "fieldtype": "Table",
+   "label": "Marketing Test Outcomes",
+   "options": "Marketing Test Outcomes"
+  },
+  {
+   "fieldname": "production_test_outcomes",
+   "fieldtype": "Table",
+   "label": "Production Test Outcomes",
+   "options": "Production Test Outcomes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-17 11:45:21.611891",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Test Run",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
