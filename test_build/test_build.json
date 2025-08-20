@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:build_number",
+ "creation": "2025-07-01 11:24:05.321881",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "build_number",
+  "is_active",
+  "release_note",
+  "column_break_lzun",
+  "description",
+  "attach_ktfc"
+ ],
+ "fields": [
+  {
+   "fieldname": "build_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Build Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "release_note",
+   "fieldtype": "Text Editor",
+   "label": "Release Note"
+  },
+  {
+   "fieldname": "attach_ktfc",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_lzun",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-01 13:49:49.065815",
+ "modified_by": "Administrator",
+ "module": "FI Testing",
+ "name": "Test Build",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
